@@ -2,7 +2,7 @@ Developing-Data-Products-Assignment
 ===================================
 
 Assignment Submission Files
-- [ui.R] (https://github.com/michael-gm/dataproducts3/blob/master/ui.R)
+- [ui.R](https://github.com/michael-gm/dataproducts3/blob/master/ui.R)
 - [server.R](https://github.com/michael-gm/dataproducts3/blob/master/server.R)
 
 More Information
