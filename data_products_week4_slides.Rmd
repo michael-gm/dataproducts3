@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ##Introduction
 
 >- This presentation is the pitch which refers to the shiny web app.
->- The web can can be found here: 
+>- The web can can be found here: https://dataproductsfinal.shinyapps.io/developing-data-products-assignment/
 >- The presentation and the shiny project was generated using RStudio.
 
 
@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 >- The project has the goal to calculate and estimate the cashflow of properties.
 >- You can give some numbers refering to a specific property and the application estimates the cashflow for you.
 >- There is no external data needed for this kind of application.
->- You can find all informations and the source code here: 
+>- You can find all informations and the source code here: https://github.com/michael-gm/dataproducts3
 
 
 ##Server Functions 1/2
