@@ -1,0 +1,57 @@
+---
+title: "Developing Data Products - Shiny Application and pitch slides"
+date: "29 Oktober 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+##Introduction
+
+>- This presentation is the pitch which refers to the shiny web app.
+>- The web can can be found here: 
+>- The presentation and the shiny project was generated using RStudio.
+
+
+##Description
+
+>- The project has the goal to calculate and estimate the cashflow of properties.
+>- You can give some numbers refering to a specific property and the application estimates the cashflow for you.
+>- There is no external data needed for this kind of application.
+>- You can find all informations and the source code here: 
+
+
+##Server Functions 1/2
+
+```{r, echo = TRUE, eval =FALSE}
+calculateRentalYield <- function (weeklyRent, propertyPrice) 
+{
+  result <- weeklyRent * 52 / propertyPrice * 100
+  return(round(result, digits = 2))
+}
+
+calculateYearlyCashflow <- function(weeklyRent, strata, council, 
+                        water, managementFees, weeklyRepayments)
+{
+  result <- weeklyRent * 52 - (strata + council + water) * 4 - 
+      managementFees * 52 - weeklyRepayments * 52
+  return(round(result, digits = 2))
+}
+```
+
+##Server Functions 2/2
+
+```{r, echo = TRUE, eval =FALSE}
+
+calculateWeeklyCashflow <- function(weeklyRent, strata, council, 
+                         water, managementFees, weeklyRepayments)
+{
+  result <- (weeklyRent * 52 - (strata + council + water) * 4 - 
+                 managementFees * 52 - weeklyRepayments * 52) / 52
+  return(round(result, digits = 2))
+}
+```
+
